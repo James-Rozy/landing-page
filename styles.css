@@ -16,13 +16,19 @@ body {
 
 .header-content,
 .hero-content,
+.info-content,
+.quote-content,
+.cta-content,
 .footer-content {
     display: flex;
+    padding: 0;
+    margin: 0 200px;
+}
+
+.header-content {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0;
-    margin: 0 200px 0;
 }
 
 .header-logo {
@@ -32,10 +38,10 @@ body {
 
 .header-link,
 .hero-secondary,
+.footer-content,
 .img {
     color: #E5E7EB;
-    font-size: 18px;
-    font-weight: 100;
+    font-size: 18px; 
 }
 
 .header-link {
@@ -49,15 +55,16 @@ body {
 }
 
 .hero-content {
-    display: flex;
-    flex: 1;
-    padding: 48px 0;
+    padding: 100px 0;
+    justify-content: space-evenly;
 }
 
 .hero-left {
     display: flex;
+    flex: 2;
     flex-direction: column;
     align-content: flex-start;
+    gap: 10px;
 }
 
 .hero-main {
@@ -67,18 +74,33 @@ body {
 }
 
 .bt-hero {
+    display: flex;
+    align-content: flex-start;
+    justify-content: center;
+    max-width: fit-content;
+    padding: 8px 16px;
     border: none;
     border-radius: 8px;
     background: #3882F6;
 }
 
-.img {
+.hero-img {
     background: #808080;
     width: 400px;
     height: 200px;
+    border: none;
+    border-radius: 36px;
     display: flex;
+    flex: 3;
     align-items: center;
     justify-content: center;
 }
 
-.footer {}
+
+
+.footer-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 36px 0;
+}
