@@ -41,7 +41,8 @@ body {
 .footer-content,
 .img {
     color: #E5E7EB;
-    font-size: 18px; 
+    font-size: 18px;
+    font-weight: 400; 
 }
 
 .header-link {
@@ -56,7 +57,7 @@ body {
 
 .hero-content {
     padding: 100px 0;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .hero-left {
@@ -69,7 +70,7 @@ body {
 
 .hero-main {
     font-size: 48px;
-    font-weight: extra-bold;
+    font-weight: 700;
     color: #F9FAF8;
 }
 
@@ -96,7 +97,74 @@ body {
     justify-content: center;
 }
 
+.info-content,
+.quote-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 36px 0;
+}
 
+.info-header {
+    display: flex;
+    padding: 36px 0;
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.random-stuff {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    gap: 36px;
+}
+
+.stuff {
+    max-width: 150px;
+}
+
+.info-box {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #3882F6;
+    border-radius: 8px;
+}
+
+.info-text {
+    display: flex;
+    padding: 8px 0;
+    text-align: center;
+    color: #1F2937;
+}
+
+.quote {
+    background: #E5E7EB;
+}
+
+.quote-content {
+    display: flex;
+    padding: 64px;
+}
+
+.quote-text {
+    display: flex;
+    align-self: center;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.quote-author {
+    display: flex;
+    align-self: flex-end;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.footer {
+    margin-top: auto;
+}
 
 .footer-content {
     flex-direction: row;
